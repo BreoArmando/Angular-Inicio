@@ -1,0 +1,32 @@
+<h1>{{title}}</h1>
+
+<p>Dentro de la notación de las dobles llaves de Angular se puede escribir
+  cualquier expresión de JavaScript, es decir, no solamente admite variables
+  de la clase de TS:
+
+  <br />
+  <br />
+
+  {{ title + " ¿Cómo estás?" }}
+</p>
+
+<button (click)="numb1 = numb1 + 1;">+1</button>
+<span>{{numb1}}</span>
+<button (click)="numb1 = numb1 - 1">-1</button>
+
+<br />
+<br />
+
+<button (click)="acumular(+2);">+2</button>
+<span>{{numb2}}</span>
+<button (click)="acumular(-2)">-2</button>
+
+<br />
+<br />
+<hr />
+
+<h3>La base es <strong>{{ base }}</strong></h3>
+
+<button (click)="acumular(base);">+{{ base }}</button>
+<span>{{numb2}}</span>
+<button (click)="acumular(-base)">-{{ base }}</button>
