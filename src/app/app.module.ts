@@ -9,7 +9,6 @@ import { HeroesModule } from './heroes/heroes.module';
 @NgModule({
   declarations: [
     AppComponent,
-    ContadorComponent,
     //ListadoComponent
     //Si se crean más componentes, se deben importar y añadir aquí. Sin embargo, dado que las aplicaciones pueden
     //  crecer hasta ser enormes, no se suele gestionar todo desde el app.module, sino que se tiene un módulo por
