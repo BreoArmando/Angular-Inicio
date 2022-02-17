@@ -6,7 +6,7 @@ import { ContadorComponent } from "./contador/contador.component";
         ContadorComponent
     ],
     exports: [
-        
+        ContadorComponent
     ],
     imports: [
         //En este módulo no haría falta importar CommonModule porque no se utilizan directivas de Angular

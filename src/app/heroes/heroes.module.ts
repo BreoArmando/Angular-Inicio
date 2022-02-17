@@ -11,7 +11,8 @@ import { ListadoComponent } from "./listado/listado.component";
     ],
     exports:[
         //SE EXPORTAN LOS MÓDULOS QUE HAN DE UTILIZARSE EN OTROS COMPONENTES:
-        ListadoComponent
+        ListadoComponent,
+        HeroeComponent
     ],
     imports:[
         //Permite el uso de directivas como *ngIf o *ngFor

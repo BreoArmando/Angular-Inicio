@@ -1,0 +1,74 @@
+<h1>Dragon Ball funciona!</h1>
+<hr />
+
+<div class="row">
+    <div class="col">
+        <app-personajes></app-personajes>
+        
+        <!-- 
+            <ul>
+                <li>Krillin - 700</li>
+                <li>Goku - 15000</li>
+                <li>Vegeta - 8500</li>
+            </ul> 
+        -->
+    </div>
+
+    <div class="col">
+        <app-agregar [heroe]="heroe"></app-agregar>
+
+        <!--
+            <h3>Agregar</h3>
+            <hr />
+
+            <form method="post" (ngSubmit)="enviaForm( $event )">
+                <!--
+                    Cuando se coloca entre llaves un atributo HTML, se le está indicando al navegador que su valor vendrá dado
+                    desde el lado del archivo .ts, de esta forma, se le puede asignar directamente una variable, la propiedad
+                    de un objeto, etc. 
+                    
+                    Así queda enlazado en lo que se conoce como 'one way data binding':
+                        [atributoHTML]="objeto.propiedad"
+
+                    En otras palabras, las llaves cuadradas sirven para establecer una propiedad.
+                
+                <input 
+                    type="text" 
+                    placeholder="Nombre" 
+                    [value]="heroe.nombre" 
+                />
+
+                <!--
+                    Por otro lado, cuando se coloca un atributo entre paréntesis, significa que el elemento escucha el evento
+                    indicado entre los paréntesis, y al lanzarse, se ejecuta la función que le da valor.
+
+                    En otras palabras, los paréntesis sirven para escuchar eventos.
+                
+                <input 
+                    type="number" 
+                    placeholder="Poder" 
+                    [value]="heroe.poder" 
+                    (input)="cambiaPoder($event)"
+                />
+
+                <!--
+                    'two way data binding'
+                
+                <input 
+                    type="number" 
+                    placeholder="Edad" 
+                    name="edad"
+                    [(ngModel)]="heroe.edad"
+                />
+
+                <button type="submit" name="enviar" id="Enviar" (click)="agregaPersonaje()">
+                    Agregar
+                </button>
+            </form>
+        -->
+        <p>
+            Cuando se modifican valores por 'two way data binding', éstos cambian en tiempo real, es decir, sin esperar
+            a que se emita el evento: <b>La edad del héroe es {{ heroe.edad }}</b>
+        </p>
+    </div>
+</div>

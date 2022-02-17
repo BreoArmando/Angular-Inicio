@@ -1,0 +1,32 @@
+<h3>Agregar</h3>
+<hr />
+
+<form method="post" (ngSubmit)="enviaForm( $event )">
+    <input 
+        type="text" 
+        placeholder="Nombre" 
+        name="nombre"
+        [(ngModel)]="heroe.nombre"
+
+    />
+
+    <input 
+        type="number" 
+        placeholder="Poder" 
+        name="poder"
+        [(ngModel)]="heroe.poder"
+
+    />
+
+    <input 
+        type="number" 
+        placeholder="Edad" 
+        name="edad"
+        [(ngModel)]="heroe.edad"
+    />
+
+    <button type="submit" name="enviar" id="Enviar" (click)="agregaPersonaje()
+    ">
+        Agregar
+    </button>
+</form>
